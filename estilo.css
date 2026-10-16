@@ -1,0 +1,14 @@
+:root { --papel: #F7F2E7; --tinta: #211C1A; --verde: #58B947; --verde-oscuro: #3E8E33; --amarillo: #FFD23F; --grilla: rgba(143,179,217,.22); --suave: #6b625c; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--tinta); background-color: var(--papel);
+  background-image: linear-gradient(var(--grilla) 1px, transparent 1px), linear-gradient(90deg, var(--grilla) 1px, transparent 1px);
+  background-size: 32px 32px; font: 18px/1.6 "Shantell Sans", system-ui, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 56px 16px 72px; }
+h1 { font-size: clamp(44px, 10vw, 76px); line-height: 1; margin: 18px 0 8px; font-weight: 800; }
+h1 span { color: var(--verde); }
+h2 { font-size: 22px; margin: 32px 0 6px; }
+.lupo { width: 120px; height: 120px; border-radius: 50%; border: 5px solid var(--tinta); display: block; }
+.franja { display: inline-block; background: var(--amarillo); border: 3px solid var(--tinta); padding: 4px 14px; transform: rotate(-1.5deg); font-weight: 700; }
+.fecha, footer { color: var(--suave); font-size: 15px; }
+a { color: var(--verde-oscuro); font-weight: 600; }
+footer { margin-top: 56px; border-top: 2px dashed rgba(33,28,26,.25); padding-top: 16px; }
